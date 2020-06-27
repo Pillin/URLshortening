@@ -5,12 +5,14 @@ import SocialMedia from "./SocialMedia";
 
 const Container = styled.section`
   width: 100%;
-  height: 300px;
+  height: 240px;
   display: flex;
   flex: row;
+  justify-content: center;
   background-color: ${(props) => props.theme.colors.neutralVeryDarkViolet};
 `;
 const Logo = styled.img`
+  margin: 1.5em 0em;
   width: 100px;
   height: 30px;
   color: white;
@@ -36,7 +38,7 @@ const Footer = () => {
         ]}
       />
       <LinkList
-        title=""
+        title="Company"
         list={[
           { label: "About", url: "/" },
           { label: "Our Team", url: "/" },
