@@ -9,3 +9,9 @@ body .root {
   margin: 0px;
   font-family: Poppins;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

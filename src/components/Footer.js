@@ -5,11 +5,18 @@ import SocialMedia from "./SocialMedia";
 
 const Container = styled.section`
   width: 100%;
-  height: 240px;
+  height: auto;
   display: flex;
-  flex: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: ${(props) => props.theme.colors.neutralVeryDarkViolet};
+
+  @media (min-width: 679px) {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 240px;
+  }
 `;
 const Logo = styled.img`
   margin: 1.5em 0em;

@@ -4,7 +4,13 @@ import styled from "@emotion/styled";
 const Container = styled.section`
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 0px 32px;
+  align-items: center;
+  @media (min-width: 679px) {
+    width: auto;
+    align-items: flex-start;
+  }
 `;
 const Title = styled.h3`
   color: ${(props) => props.theme.colors.neutralWhite};
@@ -15,7 +21,13 @@ const ListContainer = styled.ul`
   padding: 0px;
   margin: 0px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   li {
+  }
+  @media (min-width: 679px) {
+    align-items: flex-start;
   }
 `;
 const ALink = styled.a`
