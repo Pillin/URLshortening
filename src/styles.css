@@ -13,5 +13,6 @@ body .root {
 *,
 *::before,
 *::after {
+  z-index: 5;
   box-sizing: border-box;
 }
