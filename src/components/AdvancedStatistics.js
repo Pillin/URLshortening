@@ -11,7 +11,7 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.neutralGray};
+  background-color: ${(props) => props.theme.colors.neutralLightGray};
 `;
 
 const Title = styled.h1``;

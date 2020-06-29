@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { CyanButton } from "./core/Button";
 
 const Container = styled.section`
   width: 100%;
@@ -13,15 +14,6 @@ const Container = styled.section`
 
 const Title = styled.h1`
   color: white;
-`;
-const CyanButton = styled.button`
-  color: white;
-  width: 200px;
-  padding: 16px;
-  font-weight: ${(props) => props.theme.typography.primaryBold};
-  border-radius: 20px;
-  border: 0px;
-  background-color: ${(props) => props.theme.colors.primaryCyan};
 `;
 
 const GetStarted = () => {

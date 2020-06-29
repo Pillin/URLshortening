@@ -8,6 +8,8 @@ body .root {
   width: 100%;
   margin: 0px;
   font-family: Poppins;
+  display: flex;
+  flex-direction: column;
 }
 
 *,
