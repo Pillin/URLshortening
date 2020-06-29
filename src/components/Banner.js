@@ -12,11 +12,25 @@ const Container = styled.section`
   width: 100%;
   max-width: 1170px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 679px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 const Content = styled.section`
-  width: 680px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  @media (min-width: 679px) {
+    width: 680px;
+    padding: 0px;
+    align-items: flex-start;
+  }
 `;
 const Title = styled.h1`
   font-size: 62px;
@@ -28,7 +42,10 @@ const Description = styled.section`
 `;
 
 const Img = styled.img`
-  margin-right: -100px;
+  width: 90%;
+  @media (min-width: 769px) {
+    margin-right: -100px;
+  }
 `;
 
 const Banner = () => {
