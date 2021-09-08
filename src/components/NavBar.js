@@ -5,7 +5,10 @@ import { CyanButton } from "./core/Button";
 const NavContainer = styled.section`
   display: flex;
   width: 100%;
+  max-width: ${({theme}) => theme.grid.desktop.maxWidth };
   justify-content: center;
+  padding: 0px 16px;
+  border: 1px solid black;
 `;
 
 const Container = styled.section`
@@ -19,14 +22,14 @@ const Container = styled.section`
 
   display: ${(props) => (props.displayMobile ? "flex" : "none")};
   flex-wrap: wrap;
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     width: 1170px;
     display: ${(props) => (props.displayMobile ? "none" : "flex")};
   }
 `;
 
 const Logo = styled.img`
-  padding: 0px 16px;
+
 `;
 const NavBarLink = styled.nav`
   padding: 0px 16px;

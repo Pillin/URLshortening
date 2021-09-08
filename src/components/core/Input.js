@@ -13,15 +13,16 @@ const Error = styled.span`
 const Input = styled.input`
   width: 100%;
   padding: 16px;
-  border: 1px solid red;
+  border: ${({error}) => `1px solid ${error? 'red' : "black" }`};
   border-radius: 10px;
 `;
 
-const InputField = () => {
+const InputField = (props) => {
+  const {error, value, setValue }= props 
   return (
     <Container>
-      <Input placeholder="Shorten a link here" />
-      <Error>Please add a link</Error>
+      <Input value={value} onChange={e=> setValue(e.target.value)} placeholder="Shorten a link here" />
+      <Error>{error && "Please add a link"}</Error>
     </Container>
   );
 };

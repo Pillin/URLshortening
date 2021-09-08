@@ -15,5 +15,11 @@ export const theme = {
     primaryBold: 700,
     secondaryBold: 500,
     primary: "18px"
+  },
+  grid: {
+    desktop: {
+      maxWidth: '1140px'
+    }
+
   }
 };

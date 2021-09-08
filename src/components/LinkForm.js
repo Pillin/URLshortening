@@ -6,6 +6,7 @@ import Input from "./core/Input";
 
 const Container = styled.section`
   width: 100%;
+  max-width: ${({theme}) => theme.grid.desktop.maxWidth };
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,11 +27,18 @@ const FormContainer = styled.section`
 `;
 
 const LinkForm = () => {
+  const [value, setValue] = React.useState("");
+  const [error, setError] = React.useState(false);
+
+  const inputData = {error, value, setValue};
+  const handleClick = () => {
+    setError(!value);
+  }
   return (
     <Container>
       <FormContainer>
-        <Input />
-        <CyanButton>Shorten it!</CyanButton>
+        <Input {...inputData} />
+        <CyanButton onClick={handleClick}>Shorten it!</CyanButton>
       </FormContainer>
     </Container>
   );

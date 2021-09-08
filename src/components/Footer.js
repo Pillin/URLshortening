@@ -12,22 +12,40 @@ const Container = styled.section`
   align-items: center;
   background-color: ${(props) => props.theme.colors.neutralVeryDarkViolet};
 
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     flex-direction: row;
     align-items: flex-start;
     height: 240px;
   }
 `;
-const Logo = styled.img`
+
+const ContentContainer = styled.section` 
+  width: 100%;
+ max-width: ${({theme}) => theme.grid.desktop.maxWidth }; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;;
+  align-items: center;
+
+   @media (min-width: 769px) {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 240px;
+  }
+ `
+
+const Logo = styled.h1`
   margin: 1.5em 0em;
   width: 100px;
   height: 30px;
   color: white;
+  fill: white;
 `;
 const Footer = () => {
   return (
     <Container>
-      <Logo src="/static/logo.svg" />
+      <ContentContainer>
+      <Logo>Shortly</Logo>
       <LinkList
         title="Features"
         list={[
@@ -54,7 +72,7 @@ const Footer = () => {
         ]}
       />
       <SocialMedia />
-    </Container>
+      </ContentContainer>    </Container>
   );
 };
 

@@ -7,7 +7,7 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     flex-direction: row;
     justify-content: center;
   }
@@ -21,7 +21,7 @@ const Line = styled.section`
   z-index: 4;
   bottom: 100px;
 
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     width: calc(100% - 300px);
     height: 5px;
     bottom: auto;

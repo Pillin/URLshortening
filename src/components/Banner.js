@@ -5,7 +5,10 @@ import { CyanButton } from "./core/Button";
 const BannerContainer = styled.section`
   display: flex;
   justify-content: center;
-  padding: 32px 0px;
+  padding: 32px 16px;
+  width: 100%;
+  border: 1px solid black;
+  max-width: ${({theme}) => theme.grid.desktop.maxWidth };
 `;
 
 const Container = styled.section`
@@ -15,7 +18,7 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     flex-direction: row;
     justify-content: center;
   }
@@ -26,7 +29,7 @@ const Content = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 8px;
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     width: 680px;
     padding: 0px;
     align-items: flex-start;

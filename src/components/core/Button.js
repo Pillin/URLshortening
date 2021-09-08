@@ -8,4 +8,5 @@ export const CyanButton = styled.button`
   border-radius: 20px;
   border: 0px;
   background-color: ${(props) => props.theme.colors.primaryCyan};
+  
 `;

@@ -7,7 +7,7 @@ const Container = styled.section`
   width: 100%;
   padding: 0px 32px;
   align-items: center;
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     width: auto;
     align-items: flex-start;
   }
@@ -26,7 +26,7 @@ const ListContainer = styled.ul`
   align-items: center;
   li {
   }
-  @media (min-width: 679px) {
+  @media (min-width: 769px) {
     align-items: flex-start;
   }
 `;

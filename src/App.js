@@ -7,16 +7,21 @@ import Footer from "./components/Footer";
 import LinkForm from "./components/LinkForm";
 import Banner from "./components/Banner";
 import GetStarted from "./components/GetStarted";
+import "./styles.css";
+
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <NavBar />
-      <Banner />
-      <LinkForm />
-      <AdvancedStatistics />
+
+        <NavBar />
+        <Banner />
+        <LinkForm />
+        <AdvancedStatistics />
+
       <GetStarted />
       <Footer />
+
     </ThemeProvider>
   );
 }
