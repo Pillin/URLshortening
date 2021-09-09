@@ -32,7 +32,7 @@ const Content = styled.section`
   padding: 8px;
   @media (min-width: 769px) {
     max-width: 680px;
-    min-width: 340px;
+    min-width: 250px;
     padding: 0px;
     align-items: flex-start;
   }
