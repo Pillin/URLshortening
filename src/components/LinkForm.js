@@ -17,13 +17,25 @@ const FormContainer = styled.section`
   max-width: 1170px;
   padding: 32px 32px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
   align-items: flex-start;
   justify-content: center;
   border-radius: 10px;
   background: ${(props) => props.theme.colors.primaryDarkViolet};
   background-image: url("/static/bg-boost-desktop.svg");
+  > button {
+    width: 100%;
+    margin-top: 16px;
+  }
+  @media (min-width: 769px) {
+    flex-direction: row;
+
+     > button {
+      width: 200px;
+
+    }
+  }
 `;
 
 const LinkForm = () => {

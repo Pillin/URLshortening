@@ -5,7 +5,7 @@ import {
   Twitter,
   Pinterest,
   Instagram
-} from "emotion-icons/fa-brands/";
+} from "emotion-icons/fa-brands";
 
 const Container = styled.section`
   height: 20px;
@@ -15,7 +15,6 @@ const Container = styled.section`
   width: 200px;
   > svg {
     color: white;
-
     height: 20px;
   }
 `;

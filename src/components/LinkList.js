@@ -34,6 +34,9 @@ const ALink = styled.a`
   color: white;
   text-decoration: none;
   color: ${(props) => props.theme.colors.neutralGray};
+  &:hover {
+     color: ${(props) => props.theme.colors.primaryCyan};
+  }
 `;
 
 const NavBar = (props) => {

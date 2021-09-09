@@ -11,7 +11,11 @@ const Container = styled.section`
   background-color: white;
   border-radius: 5px;
   padding: 24px;
-  margin: ${({number}) => `${number*50}px 16px 48px 16px`};
+ margin: 24px;
+
+  @media (min-width: 769px) {
+   margin: ${({number}) => `${number*50}px 16px 48px 16px`};
+  }
 `;
 
 const LogoContainer = styled.section`

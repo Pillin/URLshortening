@@ -7,7 +7,8 @@ const BannerContainer = styled.section`
   justify-content: center;
   padding: 32px 16px;
   width: 100%;
-  border: 1px solid black;
+  z-index: 1;
+  
   max-width: ${({theme}) => theme.grid.desktop.maxWidth };
 `;
 
@@ -15,7 +16,7 @@ const Container = styled.section`
   width: 100%;
   max-width: 1170px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 
   @media (min-width: 769px) {
@@ -30,14 +31,19 @@ const Content = styled.section`
   align-items: center;
   padding: 8px;
   @media (min-width: 769px) {
-    width: 680px;
+    max-width: 680px;
+    min-width: 340px;
     padding: 0px;
     align-items: flex-start;
   }
 `;
 const Title = styled.h1`
-  font-size: 62px;
+  font-size: 36px;
   margin: 0px;
+
+  @media (min-width: 769px) {
+   font-size: 62px;
+  }
 `;
 const Description = styled.section`
   font-size: 20px;
@@ -45,9 +51,10 @@ const Description = styled.section`
 `;
 
 const Img = styled.img`
-  width: 90%;
+  width: 70%;
   @media (min-width: 769px) {
     margin-right: -100px;
+    width: 80%;
   }
 `;
 

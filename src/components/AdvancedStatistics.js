@@ -11,13 +11,16 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -60px;
+  z-index: 1;
+  padding-top: 100px;
+
   background-color: ${(props) => props.theme.colors.neutralLightGray};
 `;
 
 const ContentContainer = styled.section`
   width: 100%;
-  border: 1px solid black;
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   max-width: ${({theme}) => theme.grid.desktop.maxWidth };
